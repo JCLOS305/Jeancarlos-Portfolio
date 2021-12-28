@@ -4,8 +4,8 @@
 
 /* Site Core Colors + Style*/
 :root {
-    --primary: rgb(121,82,125);
-    --secondary:rgb(240,121,82);
+    --primary: rgb(125, 82, 82);
+    --secondary:rgb(0, 0, 0);
     --tertiary: rgb(240,121,82)
     --dark: rgba(28, 29, 33, 1);
     --light: rgba(238, 238, 247, 1);
@@ -93,11 +93,10 @@ main {
 
 /* Hero Content */
 .hero {
-    background: rgb(68, 88, 120);
-    background-image: url("../images/lion.jpg"), linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
-    background-size: cover;
+    background: rgb(0, 0, 0);
+    background-image: url("./images/hero\ banner\ image.png") ;
+    background-size: auto;
     background-position: center;
-    background-blend-mode: soft-light;
     min-height: 30vh;
     color: var(--light);
     padding: 2% 6%;
@@ -109,9 +108,9 @@ main {
 }
 
 .hero img {
-    width: 150px;
-    margin: 20px;
-    border-radius: 10%;
+    width: 350px;
+    margin: 30px;
+    border-radius: 9%;
     opacity: 0.8;
 }
 
@@ -131,4 +130,40 @@ main {
     font-size: 2.2rem;
     line-height: 1.2;
     display: inline;
+}
+
+/* Main  Content */
+
+.page-wrapper {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: vw;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 75%;
+}
+
+.page-section p {
+    margin-bottom: 20px;
+    color: black;
 }
