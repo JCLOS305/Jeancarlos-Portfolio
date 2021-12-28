@@ -255,3 +255,9 @@ main {
     color: var(--light);
 }
 
+/* Footer section */
+footer  {
+    font-size: 1.0em;
+    text-align: center;
+    vertical-align: bottom;
+  }
