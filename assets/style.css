@@ -212,3 +212,16 @@ main {
 .grid-item h3 {
     font-size: 1.4rem;
 }
+
+/* Images*/
+.runbuddy {
+    background-image: url("./images/Run\ Buddy\ Screen\ Shot.PNG");
+}
+
+.horiseon {
+    background-image: url("./images/horiseon\ screen\ shot.png");
+}
+
+.navmenu {
+    background-image: url("./images/Place\ holder\ image.jpeg");
+}
