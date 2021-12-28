@@ -28,3 +28,27 @@ p {
     margin: 0;
 }
 
+/* Header  */
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px rgb(240,121,82);
+}
+
+header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 5%;
+    margin: 0;
+    font-size: 3vw;
+    line-height: 1;
+}
+
+header a:hover {
+    color: var(--light);
+}
