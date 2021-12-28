@@ -90,3 +90,45 @@ main {
 .light {
     color: var(--light);
 }
+
+/* Hero Content */
+.hero {
+    background: rgb(68, 88, 120);
+    background-image: url("../images/lion.jpg"), linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 10vw;
+}
+
+.hero img {
+    width: 150px;
+    margin: 20px;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+
+.hero img:hover{
+    opacity: 1;
+}
+
+.hero div {
+    flex: 0 0 90%;
+}
+
+.hero h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    display: inline;
+}
