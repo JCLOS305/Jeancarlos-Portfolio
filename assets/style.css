@@ -111,7 +111,7 @@ main {
     width: 350px;
     margin: 30px;
     border-radius: 9%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .hero img:hover{
@@ -155,7 +155,7 @@ main {
     text-align: right;
     padding-right: 15px;
     border-right: 4px solid var(--primary);
-    font-size: vw;
+    font-size: 50px;
     line-height: 1.1;
 }
 
@@ -179,7 +179,7 @@ main {
 }
 
 .grid-item {
-    border: 5px solid var(--secondary);
+    border: 7px solid var(--secondary);
     grid-column: span 4;
     background-color: var(--primary);
     color: var(--tertiary);
@@ -188,7 +188,7 @@ main {
     align-items: flex-end;
     padding: 0 0 20px 0;
     text-decoration: none;
-    background-blend-mode: soft-light;
+    background-blend-mode:hard-light;
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.8rem;
@@ -261,3 +261,65 @@ footer  {
     text-align: center;
     vertical-align: bottom;
   }
+
+  /* MEDIA QUERIES*/
+
+/* Max Width 980px*/
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+    }
+}
+
+/* Max Width 768px*/
+@media screen and (max-width: 768px) {
+    .grid-item,
+    .grid-item:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .grid-container {
+        grid-auto-rows: minmax(200px, 1fr);
+    }
+
+    .contact address {
+        flex-direction: column;
+        align-items: center;
+    }
+}
