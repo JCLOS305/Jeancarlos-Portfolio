@@ -30,7 +30,7 @@ Test/School/Homework Purposes Only
 
 
 
-<img src="Jeancarlos-Portfolio\assets\images\Web Page.PNG">
+<img src="https://github.com/JCLOS305/Jeancarlos-Portfolio/blob/main/assets/images/Web%20Page.PNG">
 
 
 ## Credits
